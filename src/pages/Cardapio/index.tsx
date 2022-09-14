@@ -26,8 +26,8 @@ export default function Cardapio() {
                 />
                 <div className={styles.cardapio__filtros}>
                     <Filtros 
-                    filtro={filtro}
-                    setFiltro={setFiltro}
+                        filtro={filtro}
+                        setFiltro={setFiltro}
                     />
                 </div>
             </section>
