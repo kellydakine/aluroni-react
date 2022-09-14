@@ -7,6 +7,7 @@ import Filtros from "pages/Filtros";
 export default function Cardapio() {
 
     const [busca, setBusca] = useState("");
+    const [filtro, setFiltro] = useState<number | null>(null);
     return (
         <main>
             <nav className={styles.menu}>
@@ -24,7 +25,10 @@ export default function Cardapio() {
                     setBusca={setBusca}
                 />
                 <div className={styles.cardapio__filtros}>
-                    <Filtros/>
+                    <Filtros 
+                    filtro={filtro}
+                    setFiltro={setFiltro}
+                    />
                 </div>
             </section>
         </main>
