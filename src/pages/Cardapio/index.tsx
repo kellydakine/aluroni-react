@@ -4,6 +4,7 @@ import Buscador from "./Buscador";
 import { useState } from "react";
 import Filtros from "pages/Filtros";
 import Ordenador from "./Ordenador";
+import Itens from "./Itens";
 
 export default function Cardapio() {
 
@@ -36,6 +37,7 @@ export default function Cardapio() {
                         setOrdenador={setOrdenador}
                     />
                 </div>
+                <Itens/>
             </section>
         </main>
     );
